@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    @apply flex flex-col items-center min-h-screen py-8 tracking-tighter bg-slate-100;
+  }
+  #app {
+    @apply w-10/12 p-4 mx-auto bg-white;
+  }
+
+  .resume {
+    @apply w-3/4 h-auto mx-auto border shadow-sm border-slate-200;
+  }
+}
